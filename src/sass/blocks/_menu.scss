@@ -1,0 +1,27 @@
+.menu {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    &__link {
+        color: #ffffff;
+        font-size: 15px;
+        font-weight: 400;
+        &:hover {
+            color: $main-color;
+        }
+    }
+    &__item {
+        border-right: 2px dotted #2e2e2e;
+        padding-right: 15px;
+        padding-left: 15px;
+        &:nth-child(1) {
+            padding-left: 35px;
+        }
+        &:last-child {
+            border-right: none;
+            padding-right: 35px;
+        }
+    }
+}

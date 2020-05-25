@@ -1,0 +1,36 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .header>nav {
+        width: 61%;
+    }
+    // .header>div {
+    //      :nth-child(2) {
+    //         flex-direction: column;
+    //         justify-content: flex-end;
+    //     }
+    // }
+    &__logo {
+        width: 96px;
+        height: 100px;
+    }
+    &__contact {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 24px;
+        text-align: right;
+        a {
+            font-size: 18px;
+            font-weight: 700;
+            color: #ffffff;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+}
